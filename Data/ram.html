@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="styles.css">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki's Computers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="techweb">
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="/index.html">Rafiki's Computers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="mainnav navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peripherals.html">Peripherals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Cases.html">Cases</a>
+            <a class="dropdown-item" href="cpu.html">Processors</a>
+            <a class="dropdown-item" href="ram.html">RAM</a>
+            <a class="dropdown-item" href="motherboard.html">Motherboards</a>
+            <a class="dropdown-item" href="storage.html">Storage</a>
+            <a class="dropdown-item" href="gpu.html">Graphics Cards</a>
+            <a class="dropdown-item" href="wifi.html">NICs</a>
+            <a class="dropdown-item" href="psu.html">Power Supply UniTs</a>
+ 
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <h1>RAM</h1>
+  <p class="casetext">RAM (Random Access Memory) is like the short term memory for the computer. It temporarily stores information that a device needs. It is a better idea to get fast RAM to make sure your PC doesn't slow down as you use applications. The RAM is super fast to access which improves computer speeds due to the fact that the computer doesn't need to reach into the slower hard disk drives on the PC.</p>
+
+
+  <div class="partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/73588.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Entry Level</h5>
+      <p class="card-text">For those who dont require using demanding software.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">G.SKILL Aegis</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               This set of dual channel RAM is good for everyday tasks and light gaming. It features a speed of 2400MHz with a cas latency of 15. The timing on this ram is 15-15-15-35.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="budgetramsite()" >Visit Store Page</button>
+              <script>
+                function budgetramsite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=24_311_1326&item_id=092276")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="midcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/ram.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mid End</h5>
+      <p class="card-text">A good choice for those who play video games or need RAM for demanding software or rendering.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#midmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="midmodal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">CORSAIR Vengeance RGB PRO</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              This RAM kit is great for everyday multitasking and heavy gaming. With a dual channel kit of 16GB at 3200MHz and a cas latency of 16, this ram kit will be more than enough under heavy loads. This RAM kit also looks very good inside builds which is always a plus.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="midramsite()" >Visit Store Page</button>
+              <script>
+                function midramsite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=24_311_1326&item_id=122566")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="highcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/rgb.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">High End</h5>
+      <p class="card-text">For those who want good performance in both productivity and gaming.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#highmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="highmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">G.Skill Trident Z RGB</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              This RAM kit looks amazing but it is also overkill. This RAM kit is way more than enough for heavy rendering, 3D modelling, content creation, gaming and any other task. This RAM kit features a dual channel setup of 32GB of RAM at 4000MHz at a CL19. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="highramsite()" >Visit Store Page</button>
+              <script>
+                function highramsite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=24_311_1326&item_id=138333")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+          <div class="casefoot footparts">
+              <h2>Contact</h2>
+              <p>Email: 650379@pdsb.net</p>
+              <p>created by Aazain</p>
+          </div>
+</body>
+</html>
+
+
+
+

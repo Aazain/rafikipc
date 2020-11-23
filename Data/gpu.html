@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="styles.css">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki's Computers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="techweb">
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="/index.html">Rafiki's Computers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="mainnav navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peripherals.html">Peripherals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Cases.html">Cases</a>
+            <a class="dropdown-item" href="cpu.html">Processors</a>
+            <a class="dropdown-item" href="ram.html">RAM</a>
+            <a class="dropdown-item" href="motherboard.html">Motherboards</a>
+            <a class="dropdown-item" href="storage.html">Storage</a>
+            <a class="dropdown-item" href="gpu.html">Graphics Cards</a>
+            <a class="dropdown-item" href="wifi.html">NICs</a>
+            <a class="dropdown-item" href="psu.html">Power Supply UniTs</a>
+            
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <h1>Graphics Cards</h1>
+  <p class="casetext">The Graphics Card also reffered to as the GPU is a very important part in the computer, especially for gamers. The GPU handles all of the output sent to your screen and handles all the rendering. The better the GPU, the higher the FPS and you always want to have high framrates to enjoy your video games.</p>
+
+
+  <div class="partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/87729.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Entry Level</h5>
+      <p class="card-text">A great budget GPU for casual gamers.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nvidia GeForce GTX 1660 OC</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              With a 1830MHz boost clock, 8002MHz memory clock and 6GB of VRAM, the 1660 is a great GPU for people who want to play video games casually. The 1660 is great for playing AAA titles and tackling entry level content creation. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="budgetgpusite()" >Visit Store Page</button>
+              <script>
+                function budgetgpusite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=43_557_559&item_id=136151")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="midcardg midcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/2070s.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mid End</h5>
+      <p class="card-text">A GPU for people who want to experience games at high framerates.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#midmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="midmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nvidea GeForce RTX 2070 Super</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The RTX 2070s is a great GPU for those who want a visually stunning experience at high framerates. The RTX 2070s features ray tracing for immersive experiences. The 2070s comes with a 1770MHz boost clock aned a 14000MHz memory clock with 8GB GDDR6 VRAM. The 2070s is great choice for gaming and any other 3D application.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="midgpusite()" >Visit Store Page</button>
+              <script>
+                function midgpusite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=43_557_559&item_id=151114")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="highcardg highcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/3090.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">High End</h5>
+      <p class="card-text">The best Graphics Cards you can get. High framerates, great aesthetics, and the best performance you can get.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#highmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="highmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nvidia GeForce RTX 3090</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The 3090 is equipped with a whopping 24GB of GDDR6X VRAM, a 1695MHz boost and 19500MHz memory clock. This beast is the best GPU you can get with support for 8k gaming. Powered by Nvidea Ampere, the 3090 provides the best AI performance and enhances Ray Tracing cores. The 3090 can handle any game at ultra settings without trouble. This is the best GPU you can get for any sort of content creation, media design, or gaming title. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="highgpusite()" >Visit Store Page</button>
+              <script>
+                function highgpusite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=43_557_559&item_id=181854")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+          <div class="casefoot footparts">
+              <h2>Contact</h2>
+              <p>Email: 650379@pdsb.net</p>
+              <p>created by Aazain</p>
+          </div>
+</body>
+</html>
+
+
+
+

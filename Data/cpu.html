@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="styles.css">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki's Computers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="techweb">
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="/index.html">Rafiki's Computers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="mainnav navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peripherals.html">Peripherals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Cases.html">Cases</a>
+            <a class="dropdown-item" href="cpu.html">Processors</a>
+            <a class="dropdown-item" href="ram.html">RAM</a>
+            <a class="dropdown-item" href="motherboard.html">Motherboards</a>
+            <a class="dropdown-item" href="storage.html">Storage</a>
+            <a class="dropdown-item" href="gpu.html">Graphics Cards</a>
+            <a class="dropdown-item" href="wifi.html">NICs</a>
+            <a class="dropdown-item" href="psu.html">Power Supply UniTs</a>
+           
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <h1>Processors</h1>
+  <p class="casetext">The proccessor also reffered to as the CPU is one of the most important parts of a computer. It acts as the brains of the computer and tells all the parts how to communitcate with eachother. It is crucial to get a CPU based on your needs to make sure you are satisfied with the performance of your PC.</p>
+
+
+  <div class="partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/68654.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Entry Level</h5>
+      <p class="card-text">A great value CPU that performs very well in both everyday tasks and high load programs.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">AMD Ryzen 5 3600</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              A 6 core 12 thread processor with great performance for gaming, streaming and multitasking. Desinged for AM4 socket motherboards and also PCIe 4.0 compatible. The Ryzen 5 3600 is a fully unlocked CPU which allows you to overclock giving you the maximum performance the CPU can get. The 3600 comes with a 3.6 GHz base clock and a boost clock of 4.2 GHz. The 3600 is compatible with PCIe 4.0 which lets you get super fast speeds when it comes to NVMe SSDs.  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="budgetcpusite()" >Visit Store Page</button>
+              <script>
+                function budgetcpusite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=4_64_1969&item_id=138215")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="midcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/5600x.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mid End</h5>
+      <p class="card-text">A great CPU for people who want to play AAA games at high framerates or require good performance for high load tasks.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#midmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="midmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">AMD Ryzen 5 5600x</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The Ryzen 5 5600x comes with 6 cores and 12 threads. The 5600x has a 3.7GHz base clock with a boost clock all the way up to 4.6GHz. This CPU is great for gaming, streaming and other 3D applications. A great choice for people who want to play AAA games without worrying about bottleneck or others who want fast rendering for productivity uses.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="midcpusite()" >Visit Store Page</button>
+              <script>
+                function midcpusite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=4_64_1969&item_id=183432")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="highcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/a5950x.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">High End</h5>
+      <p class="card-text">The best CPU you can get your hands on for those who don't need to worry about budget.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#highmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="highmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">AMD Ryzen 9 5950x</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The 5950x comes with a whopping 16 cores and 32 threads and has a base clock of 3.4 GHz and a boost clock of 4.9GHz. The 5950x has the best single and multicore performance yet. This powerhouse can obliterate any game or 3D rendering thrown at it without a problem. Even better, the 5950x can be pushed even further as it is an unlocked processor letting you push out the maximum performance.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="highcpusite()" >Visit Store Page</button>
+              <script>
+                function highcpusite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=4_64&item_id=183427")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+          <div class="casefoot footparts">
+              <h2>Contact</h2>
+              <p>Email: 650379@pdsb.net</p>
+              <p>created by Aazain</p>
+          </div>
+</body>
+</html>
+
+
+
+

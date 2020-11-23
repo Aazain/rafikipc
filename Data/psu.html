@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="styles.css">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki's Computers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="techweb">
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="/index.html">Rafiki's Computers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="mainnav navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peripherals.html">Peripherals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Cases.html">Cases</a>
+            <a class="dropdown-item" href="cpu.html">Processors</a>
+            <a class="dropdown-item" href="ram.html">RAM</a>
+            <a class="dropdown-item" href="motherboard.html">Motherboards</a>
+            <a class="dropdown-item" href="storage.html">Storage</a>
+            <a class="dropdown-item" href="gpu.html">Graphics Cards</a>
+            <a class="dropdown-item" href="wifi.html">NICs</a>
+            <a class="dropdown-item" href="psu.html">Power Supply UniTs</a>
+            
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <h1>PSU</h1>
+  <p class="casetext">A PSU or Power Supply Unit is the device that provides all the power to the components in a PC. You never want to cheap out on this part and you need to make sure that you purchase a PSU with enough power for the components in your PC.</p>
+
+
+  <div class="lowpsu partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/lowpsu.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Low Spec</h5>
+      <p class="card-text">A great recommendation for people with low spec PCs that have low power conuming components.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Gigabyte PW400</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The PW400 is a great choice for people with low power consuming components. This PSU supplies 400W of power and is 80 PLUS certified which means it is 80% more efficient at all loads. The PW400 also has a 120mm silent fan to make sure your PC runs quiet even at high loads.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="budgetcasesite()" >Visit Store Page</button>
+              <script>
+                function budgetcasesite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=33_1938&item_id=123394")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="midpsu wifimid midcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/58432.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mid End</h5>
+      <p class="card-text">For the people who have a mid end PC that uses components with higher power consumption.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#midmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="midmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Corsair TX750M</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The TX750M is a 750w 80 plus certified Semi-modular power supply. This PSU contains necessary cables and the rest of the cables can be plugged in seperately based on your needs. This ensures that your cmputer has the best cable management behind the motherboard. This is a great choice for high power consuming PCs.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="midcasesite()" >Visit Store Page</button>
+              <script>
+                function midcasesite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=33_1938&item_id=105123")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="highpsu wifihigh highcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/1200w.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">High Performance</h5>
+      <p class="card-text">For people who plan on having very powerful computers with extremely high power consuming components</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#highmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="highmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Corsair HX1200</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The HX1200 is a 1200w, fully modular, 80 plus certified power supply for PCs with high perfomance components. This PSU is known for being almost silent with high efficiency even at full loads. This PSU also has safety tech to make sure no cables have a current higher than 40A to make sure components stay safe.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="highcasesite()" >Visit Store Page</button>
+              <script>
+                function highcasesite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=33_1938&item_id=109021")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+          <div class="casefoot footparts">
+              <h2>Contact</h2>
+              <p>Email: 650379@pdsb.net</p>
+              <p>created by Aazain</p>
+          </div>
+</body>
+</html>
+
+
+
+

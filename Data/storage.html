@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="styles.css">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki's Computers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="techweb">
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="/index.html">Rafiki's Computers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="mainnav navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peripherals.html">Peripherals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Cases.html">Cases</a>
+            <a class="dropdown-item" href="cpu.html">Processors</a>
+            <a class="dropdown-item" href="ram.html">RAM</a>
+            <a class="dropdown-item" href="motherboard.html">Motherboards</a>
+            <a class="dropdown-item" href="storage.html">Storage</a>
+            <a class="dropdown-item" href="gpu.html">Graphics Cards</a>
+            <a class="dropdown-item" href="wifi.html">NICs</a>
+            <a class="dropdown-item" href="psu.html">Power Supply UniTs</a>
+         
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <h1>Storage</h1>
+  <p class="casetext">Storage is where the computer stores all of its files and where the operating system is running off of. Choosing a good storage device can be hard because there are so many options but that's why we're here to help.</p>
+
+
+  <div class="partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/63955.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Entry Level</h5>
+      <p class="card-text">A good option for everyday use, fast boot times, and fast pc responsivness</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">WD Blue</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The WD blue 500gb ssd is a great choice for people who want a fast pc for everyday tasks. It has a read speed of 560MB/s and Write speed of 530MB/s.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="budgetstoresite()" >Visit Store Page</button>
+              <script>
+                function budgetstoresite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=179_1927_1928&item_id=114567")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="midcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/nvme1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mid End</h5>
+      <p class="card-text">For those who want ultra fast boot times and faster application/game load times.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#midmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="midmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">WD Black SN750</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The WD Black is a 1TB M.2 storage device which is know to be some of the fastest storage devices. The WD Black NVMe has a read speed of 3500MB/s and write speed of 3000MB/s which means everyday tasks will be fast and loading/file transfer speeds will be very fast.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="midstoresite()" >Visit Store Page</button>
+              <script>
+                function midstoresite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=179_1927_1930&item_id=136163")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="highcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/nvme2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">High End</h5>
+      <p class="card-text">For anyone who wants the fastest storage they can get.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#highmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="highmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">SEAGATE FireCuda 520</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The FireCuda is a 1TB NVMe storage device with a whopping read speed of 5000MB/s and write speed of 4400MB/s. This will ensure everything will be loaded in the fastest times possible. This storage device only supports the high speeds if your motherboard also supports Gen4 PCIe.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="highstoresite()" >Visit Store Page</button>
+              <script>
+                function highstoresite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=179_1927_1930&item_id=162358")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+          <div class="casefoot footparts">
+              <h2>Contact</h2>
+              <p>Email: 650379@pdsb.net</p>
+              <p>created by Aazain</p>
+          </div>
+</body>
+</html>
+
+
+
+

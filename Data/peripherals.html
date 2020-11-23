@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="styles.css">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki's Computers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="techweb">
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="/index.html">Rafiki's Computers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="mainnav navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peripherals.html">Peripherals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Cases.html">Cases</a>
+            <a class="dropdown-item" href="cpu.html">Processors</a>
+            <a class="dropdown-item" href="ram.html">RAM</a>
+            <a class="dropdown-item" href="motherboard.html">Motherboards</a>
+            <a class="dropdown-item" href="storage.html">Storage</a>
+            <a class="dropdown-item" href="gpu.html">Graphics Cards</a>
+            <a class="dropdown-item" href="wifi.html">NICs</a>
+            <a class="dropdown-item" href="psu.html">Power Supply UniTs</a>
+       
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <h1>Peripherals</h1>
+  <p class="casetext">Its important to make sure that the peripherals you choose are not only good but what suits you. A peripheral can be cheaper than another, but the cheaper peripheral can also be better than the expensive one. Preference is on of the biggest factors. These are some recommended peripherals.</p>
+
+
+  <div class="partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/46252.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Headset</h5>
+      <p class="card-text">A recommended headset that provides great audio with great bass, mids and highs.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Logitech g635</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The g635 is a great headset with amazing sound quality. The headset features a 7.1 surround sound feature which can be anbled in the Logitech GHUB app. The headset comes with a 50mm driver which gives punchy bass and pronounced mids and highs. The g635 also stylishly features RGB lights which can be controlled in app.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="Headsetsite()" >Visit Store Page</button>
+              <script>
+                function Headsetsite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=1211_1215&item_id=135385")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="midcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/31411.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mouse</h5>
+      <p class="card-text">A stylish and accurate device that can become an in game weapon in the right hands.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#midmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="midmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Glorious Model D</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             The Glorious Model D is an amazing mouse with style and precesion. Equipped with a pixart 3360 sensor, the Model D insures you hit every shot in game. The shell of the mouse has a honeycomb hole design to cut weight to only 69g. The Model D also comes with a special paracorded cable which is so light that it feels wireless. To top it of there are 2 color options, black and white both equipped with rgb strips that can be controlled via a PC application.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="mousesite()" >Visit Store Page</button>
+              <script>
+                function mousesite() {
+                  location.replace("https://www.canadacomputers.com/product_info.php?cPath=21_279_275&item_id=174150")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="highcard partscard card" style="width: 18rem;">
+    <img class="card-img-top" src="images/ed03172f-e106-4a12-9fe7-10660d0305d8.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Keyboard</h5>
+      <p class="card-text">A stylish, compact keyboard that feels great to type on.</p>
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#highmodal">
+        See More
+      </button>
+      
+     
+      <div class="modal fade" id="highmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">GamaKay K87</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The K87 is an amazing choice for people who don't know much about keyboards but want the best quality for a price that doesn't break your bank. At $95, you get a rgb keyboard equipped with a hotswappable pcb, acrylic case, detachable usb c port, and an overall quality keyboard. A hotswappable PCB allows you to be able to swap out the switches of your keyboard. If you buy the keyboard with clicky loud switches and get tired of it, you can get different switches that are tactile or linear and swap them in without having to buy a new keyboard. Mechanical keyboards are also a lot more comfortable to type on compared to membrane keyboards a lot of people are used to.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="keyboardsite()" >Visit Store Page</button>
+              <script>
+                function keyboardsite() {
+                  location.replace("https://www.banggood.com/GamaKay-K87-87-Keys-Mechanical-Gaming-Keyboard-Hot-Swappable-Type-C-Wired-USB-3_1-Translucent-Glass-Base-Gateron-Switch-ABS-Two-color-Keycap-RGB-Gaming-Keyboard-p-1703697.html?cur_warehouse=CN&ID=515632&rmmds=search&DCC=CA&currency=CAD")
+                }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+          <div class="casefoot footparts">
+              <h2>Contact</h2>
+              <p>Email: 650379@pdsb.net</p>
+              <p>created by Aazain</p>
+          </div>
+</body>
+</html>
+
+
+
+

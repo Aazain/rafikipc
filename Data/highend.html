@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="styles.css">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki's Computers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="techweb">
+  <div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/index.html">Rafiki's Computers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="mainnav navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peripherals.html">Peripherals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Cases.html">Cases</a>
+            <a class="dropdown-item" href="cpu.html">Processors</a>
+            <a class="dropdown-item" href="ram.html">RAM</a>
+            <a class="dropdown-item" href="motherboard.html">Motherboards</a>
+            <a class="dropdown-item" href="storage.html">Storage</a>
+            <a class="dropdown-item" href="gpu.html">Graphics Cards</a>
+            <a class="dropdown-item" href="wifi.html">NICs</a>
+            <a class="dropdown-item" href="psu.html">Power Supply UniTs</a>
+            
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="card" style="width: 18rem;">
+    
+    <div class="card-body">
+      <h5 class="card-title">Entry Level</h5>
+      <p class="card-text">A great entry level recommendation for those with a smaller budget and less demanding work.</p>
+      <a href="lowend.html" class="btn btn-danger">Specs</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+  
+    <div class="card-body">
+      <h5 class="card-title">Mid-End</h5>
+      <p class="card-text">A perfect choice for people who want the best performance with good value parts.</p>
+      <a href="midend.html" class="btn btn-danger">Specs</a>
+    </div>
+  </div>
+
+  
+
+    <div class="card-body">
+      <h5 class="card-title">High End</h5>
+      <p class="lowcard card-text">For those who want the best perfomance that they can get.</p>
+      <a href="highend.html" class="btn btn-dark">Specs</a>
+    </div>
+  </div>
+
+
+<div class="highprepc midcard partscard card" style="width: 50rem;">
+  <img class="card-img-top" src="images/highendpc.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">High End</h5>
+    <p class="card-text">For the people who want the best of the best to run games at high refresh rates even at a 4k resolution.</p>
+    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#midmodal">
+      See More
+    </button>
+    
+   
+    <div class="modal fade" id="midmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">CORSAIR 4000D Airflow</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            This ABS prebuilt contains the best of the best. An i9-10900KF, RTX 3090, 32GB DDR4 RAM, 2TB NVMe SSD and an AIO to cool the CPU. This build will ensure that any game that is thrown at it will run at 4k with high refresh rates.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger" onclick="midcasesite()" >Visit Store Page</button>
+            <script>
+              function midcasesite() {
+                location.replace("https://www.newegg.ca/abs-ali464/p/N82E16883360049?Description=3090%20pc&cm_re=3090_pc-_-83-360-049-_-Product")
+              }
+              </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div> 
+  <div class="prebuiltfoot casefoot footparts">
+    <h2>Contact</h2>
+    <p>Email: 650379@pdsb.net</p>
+    <p>created by Aazain</p>
+    
+  </div>
+  
+
+</body>
+</html>
+
+
